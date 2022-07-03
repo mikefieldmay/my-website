@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pizza /> should render the Pizza component 1`] = `
+<body>
+  <div>
+    <div>
+      <h1>
+        The Pizza
+      </h1>
+      <div
+        class="PizzaImage"
+      >
+        <img
+          class="PizzaImg"
+          src="[object Object]"
+        />
+      </div>
+    </div>
+  </div>
+</body>
+`;
