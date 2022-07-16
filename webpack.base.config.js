@@ -1,3 +1,4 @@
+const CopyPlugin = require("copy-webpack-plugin");
 const path = require("path");
 const autoprefixer = require("autoprefixer");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -82,7 +83,8 @@ module.exports = {
     new WebpackShellPlugin({
       onBuildStart: ["yarn build:style-typings"],
       dev: true // makes sure command runs on file change
-    })
+    }),
+    new CopyPlugin([{ from: "./src/public" }])
   ],
   optimization: {
     splitChunks: {

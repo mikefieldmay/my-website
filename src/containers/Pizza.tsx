@@ -2,7 +2,7 @@ import React from "react";
 
 import { PizzaImage } from "../components/PizzaImage/PizzaImage";
 
-const Pizza: React.SFC = () => {
+export const Pizza: React.FC = () => {
   return (
     <div>
       <h1>The Pizza</h1>
